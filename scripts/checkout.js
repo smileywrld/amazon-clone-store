@@ -1,5 +1,5 @@
-import { cart } from "../data/cart";
-import { products } from "../data/products.js";
+import { cart } from "../data/cart.js";
+import { products} from "../data/products.js";
 
 cart.forEach((cartItem) => {
 	const productId = cartItem.productId;
@@ -12,6 +12,8 @@ cart.forEach((cartItem) => {
 		}
 	});
 
+    console.log(matchingProduct);
+    
 	`<div class="cart-item-container">
             <div class="delivery-date">
               Delivery date: Tuesday, June 21
