@@ -1,5 +1,3 @@
-import { products } from "./products.js";
-
 export let cart = JSON.parse(localStorage.getItem("cart"));
 
 if (!cart) {
