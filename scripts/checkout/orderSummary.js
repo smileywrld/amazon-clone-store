@@ -25,7 +25,7 @@ export function renderOrderSummary() {
 
 		const deliveryOptionId = cartItem.deliveryOptionId;
 
-		const deliveryOption = getDeliveryOption(deliveryOptionId);
+		let  deliveryOption = getDeliveryOption(deliveryOptionId);
 
 		deliveryOptions.forEach((option) => {
 			if (option.id === deliveryOptionId) {
